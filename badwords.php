@@ -27,7 +27,7 @@ $length_replaced_paragraph = strlen($replaced_paragraph);
          
          <h2>Secondo paragrafo, con parola censurata:</h2>
          <p><? echo $replaced_paragraph ?></p>
-         <h4>La lunghezza del paragragìfo con la parola censurata è di: <? echo $length_replaced_paragraph?> caratteri</h4>
+         <h4>La lunghezza del paragrafo con la parola censurata è di: <? echo $length_replaced_paragraph?> caratteri</h4>
     
         </div>
     

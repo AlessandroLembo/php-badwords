@@ -1,5 +1,6 @@
 <?php
-$paragraph = $_GET['paragraph']
+$paragraph = $_GET['paragraph'];
+$word = $_GET['word'];
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +13,7 @@ $paragraph = $_GET['paragraph']
 </head>
 <body>
     <p><? echo $paragraph ?></p>
+    <h2><? echo $word ?></h2>
     
 </body>
 </html>

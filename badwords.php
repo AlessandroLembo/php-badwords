@@ -1,8 +1,11 @@
 <?php
 $paragraph = $_GET['paragraph'];
 $word = $_GET['word'];
-
 $length_paragraph = strlen($paragraph);
+
+$replaced_paragraph = str_replace($word, '***', $paragraph);
+$length_replaced_paragraph = strlen($replaced_paragraph);
+
 ?>
 
 <!DOCTYPE html>
@@ -20,8 +23,13 @@ $length_paragraph = strlen($paragraph);
          <h2>Primo paragrafo:</h2>
          <p><? echo $paragraph ?></p>
          <h4>Parola da censurare: <? echo $word ?></h4>
-         <h4>La lunghezza del paragrafo è di: <?echo $length_paragraph ?> caratteri</h4>
-    </div>
+         <h4>La lunghezza del primo paragrafo è di: <?echo $length_paragraph ?> caratteri</h4>
+         
+         <h2>Secondo paragrafo, con parola censurata:</h2>
+         <p><? echo $replaced_paragraph ?></p>
+         <h4>La lunghezza del paragragìfo con la parola censurata è di: <? echo $length_replaced_paragraph?> caratteri</h4>
+    
+        </div>
     
     
 </body>

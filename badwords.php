@@ -1,6 +1,8 @@
 <?php
 $paragraph = $_GET['paragraph'];
 $word = $_GET['word'];
+
+$length_paragraph = strlen($paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -15,8 +17,10 @@ $word = $_GET['word'];
 </head>
 <body>
     <div class="container">
+         <h2>Primo paragrafo:</h2>
          <p><? echo $paragraph ?></p>
-         <h2><? echo $word ?></h2>
+         <h4>Parola da censurare: <? echo $word ?></h4>
+         <h4>La lunghezza del paragrafo è di: <?echo $length_paragraph ?> caratteri</h4>
     </div>
     
     

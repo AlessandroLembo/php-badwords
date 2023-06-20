@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: whitesmoke;
+}
+
 .container{
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: 4rem auto;
+    border: 2px solid lightgray;
+    height: 800px;
     text-align: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.orginal,
+.paragraph-changed{
+    border: 1px solid lightgray;
+    margin: 1rem;
+    padding: 2rem;
+    width: 500px;
+    height: 300px;
 }
 
 p{
@@ -19,7 +39,13 @@ h4{
     font-size: 20px;
 }
 
-h2{
-    margin-top: 3rem;
+.link-home{
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    width: 150px;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    background-color: dodgerblue;
+    border-radius: 10px;
 }
-

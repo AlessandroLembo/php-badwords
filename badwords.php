@@ -10,6 +10,7 @@ $length_replaced_paragraph = strlen($replaced_paragraph);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,19 +19,26 @@ $length_replaced_paragraph = strlen($replaced_paragraph);
 
     <link rel="stylesheet" href="word.css">
 </head>
+
 <body>
     <div class="container">
-         <h2>Primo paragrafo:</h2>
-         <p><?php echo $paragraph ?></p>
-         <h4>Parola da censurare: <?php echo $word ?></h4>
-         <h4>La lunghezza del primo paragrafo è di: <?php echo $length_paragraph ?> caratteri</h4>
-         
-         <h2>Secondo paragrafo, con parola censurata:</h2>
-         <p><?php echo $replaced_paragraph ?></p>
-         <h4>La lunghezza del paragrafo con la parola censurata è di: <?php echo $length_replaced_paragraph?> caratteri</h4>
-    
+        <div class="orginal">
+            <h2>Primo paragrafo:</h2>
+            <p><?php echo $paragraph ?></p>
+            <p>Parola da censurare: <strong><?php echo $word ?></strong></p>
+            <p>La lunghezza del primo paragrafo è di: <strong><?php echo $length_paragraph ?></strong> caratteri</p>
         </div>
-    
-    
+        <div class="paragraph-changed">
+            <h2>Secondo paragrafo, con parola censurata:</h2>
+            <p><?php echo $replaced_paragraph ?></p>
+            <p>La lunghezza del paragrafo con la parola censurata è di: <strong><?php echo $length_replaced_paragraph ?></strong> caratteri</p>
+        </div>
+
+        <a href="index.html" class="link-home">Torna indietro</a>
+
+    </div>
+
+
 </body>
+
 </html>
